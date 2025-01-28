@@ -1,11 +1,13 @@
-import javax.swing.*;
+package Testing;
+
 import java.awt.event.*;
+import javax.swing.*;
 
 public class Java_Action extends JFrame implements KeyListener {
     private static int x_position = 0;
     private static int y_position = 0;
     private static final int x_size = 20;
-    private static final int y_size = 1;
+    private static final int y_size = 10;
     private static final int plusX = x_size / 2; // X position NORTH
     private static final int negX = -1 * plusX; // X position SOUTH
     private static final int plusY = y_size / 2; // Y position WEST
@@ -61,6 +63,9 @@ public class Java_Action extends JFrame implements KeyListener {
             case KeyEvent.VK_Q -> {
                 System.out.println("Exiting the game...");
                 System.exit(0); // Quit the program
+            }
+            case KeyEvent.VK_ESCAPE -> {
+                System.out.println("Escape the game...");
             }
             default -> System.out.println("Invalid key. Use 'W', 'S', 'A', 'D', or 'Q'.");
         }
