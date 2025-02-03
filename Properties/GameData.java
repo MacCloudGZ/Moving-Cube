@@ -1,5 +1,3 @@
-package Properties;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -139,8 +137,8 @@ public class GameData extends JFrame implements KeyListener {
             super.paintComponent(g);
 
             // Calculate the top-left corner of the grid to center it
-            int gridX = (getWidth() - GRID_WIDTH) / 2;
-            int gridY = (getHeight() - GRID_HEIGHT) / 2;
+            int gridX = (((x_position + x_position) * -10) / 2) + 1 + (getWidth() - GRID_WIDTH) / 2;
+            int gridY = (((y_position + y_position) * 10) / 2) + 1 + (getHeight() - GRID_HEIGHT) / 2;
 
             // Draw the grid
             g.setColor(Color.LIGHT_GRAY);
