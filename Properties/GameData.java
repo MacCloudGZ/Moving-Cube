@@ -18,7 +18,7 @@ public class GameData extends JFrame implements KeyListener {
     public GameData() {
         // Set up the JFrame
         this.setTitle("WASD Movement with Animation");
-        this.setSize(500, 300);
+        this.setSize(1000, 600);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.addKeyListener(this); // Add KeyListener to the JFrame
 
